@@ -10,13 +10,15 @@ project "GLEW"
 	files {
 		"include/GL/glew.h",
 
-		"src/glew.c",
-		"src/glewinfo.c",
-		"src/visualinfo.c",
+		"src/glew.c"
 	}
    
 	includedirs {
 		"include"
+	}
+
+	links {
+		"opengl32"
 	}
 
 	filter "configurations:Debug"
