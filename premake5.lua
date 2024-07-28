@@ -17,8 +17,6 @@ project "GLEW"
 		"include"
 	}
 
-	defines { "GLEW_STATIC" }
-
 	filter "configurations:Debug"
 		defines { "DEBUG" }
 		symbols "On"
