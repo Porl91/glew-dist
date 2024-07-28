@@ -17,9 +17,7 @@ project "GLEW"
 		"include"
 	}
 
-	links {
-		"opengl32"
-	}
+	defines { "GLEW_STATIC" }
 
 	filter "configurations:Debug"
 		defines { "DEBUG" }
